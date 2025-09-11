@@ -1,0 +1,23 @@
+.produtosGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.preco {
+  margin:0;
+  padding: 0.4rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.descricao {
+  max-width: 27ch;
+}

@@ -1,0 +1,38 @@
+/* home.module.css */
+
+/* container principal */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* cada card de produto */
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  text-decoration: none;
+}
+
+.card:link {
+  color: inherit;
+}
+
+.card:visited {
+  color: inherit
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* imagem do produto */
+.image {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 0.1rem;
+}
