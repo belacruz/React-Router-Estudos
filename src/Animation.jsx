@@ -1,20 +1,23 @@
 import React from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import './css/animation.css';
 
 const Animation = ({ children }) => {
   const location = useLocation();
+  const containerRef = React.useRef();
 
   React.useEffect(() => {
-    document.body.classList.add('fade');
+    const el = containerRef.current;
+    el.classList.add('fade');
 
     const timeout = setTimeout(() => {
-      document.body.classList.remove('fade');
+      el.classList.remove('fade');
     }, 500);
 
     return () => clearTimeout(timeout);
   }, [location]);
-  return <div>{children}</div>;
+
+  return <div ref={containerRef}>{children}</div>;
 };
 
 export default Animation;

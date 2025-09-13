@@ -15,15 +15,11 @@ const Slide = ({ slides }) => {
   }, [active]);
 
   function slidePrev() {
-    if (active > 0) {
-      setActive(active - 1);
-    }
+    setActive(active > 0 ? active - 1 : slides.length - 1);
   }
 
   function slideNext() {
-    if (active < slides.length - 1) {
-      setActive(active + 1);
-    }
+    setActive(active < slides.length - 1 ? active + 1 : 0);
   }
 
   return (
