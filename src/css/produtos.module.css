@@ -16,6 +16,13 @@
   padding: 0.4rem;
   border-radius: 4px;
   display: inline-block;
+ background-color: #E06666;
+ color: #3B0000;
+}
+
+.preco.precoCor {
+  background-color: #66BB6A;
+  color: #083015;
 }
 
 .descricao {

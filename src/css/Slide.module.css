@@ -1,0 +1,52 @@
+.container {
+    overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  transition: transform .3s ease;
+   height: 100%; 
+}
+
+.item {
+  flex: 0 0 100%; 
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+
+.nav button {
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;            
+  padding: 0.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.nav img {
+  width: 2rem;
+  height: 2rem;
+}

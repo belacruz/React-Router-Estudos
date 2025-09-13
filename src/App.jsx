@@ -1,4 +1,3 @@
-console.clear();
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
@@ -24,7 +23,6 @@ const App = () => {
       }
     }
     fethProdutos();
-    console.log('fetch');
   }, []);
 
   return (
